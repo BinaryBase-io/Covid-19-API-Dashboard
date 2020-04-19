@@ -23,6 +23,7 @@ Route::get('/hotline', 'HotlineController@index')->name('hotline');
 Route::get('/hotline/create', 'HotlineController@create')->name('hotline_create');
 Route::post('/hotline/add', 'HotlineController@store')->name('hotline_add');
 Route::put('/hotline', 'HotlineController@update')->name('hotline_update');
+Route::delete('/hotline', 'HotlineController@destroy')->name('hotline_delete');
 
 
 Route::get('app/about', function () {

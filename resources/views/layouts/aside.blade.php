@@ -32,19 +32,19 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{route('about')}}" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">
-                        <i class="nav-icon fas fa-th"></i>
-                        <p>
-                            About
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
                     <a href="{{route('hotline')}}" class="nav-link {{ request()->is('hotline*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-phone-alt"></i>
                         <p>
                             Hotline
                             <span class="right badge badge-info">New</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{route('about')}}" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-th"></i>
+                        <p>
+                            About
                         </p>
                     </a>
                 </li>

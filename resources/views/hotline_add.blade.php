@@ -20,7 +20,7 @@
     <div class="col-md-6">
         <div class="card card-info">
             <div class="card-header">
-                <h3 class="card-title">Horizontal Form</h3>
+                <h3 class="card-title">Add New Hotline Form</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -28,15 +28,25 @@
                 {{ csrf_field() }}
                 <div class="card-body">
                     <div class="form-group row">
-                        <label for="inputEmail3" class="col-sm-4 col-form-label">Email</label>
+                        <label for="number" class="col-sm-4 col-form-label">Number/Link</label>
                         <div class="col-sm-8">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            <input type="text" name="number" class="form-control" id="number" placeholder="Number/Link">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="inputPassword3" class="col-sm-4 col-form-label">Password</label>
+                        <label for="name" class="col-sm-4 col-form-label">Title</label>
                         <div class="col-sm-8">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Title">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="type" class="col-sm-4 col-form-label">Type</label>
+                        <div class="col-sm-8">
+                            <select class="form-control" name="type" id="type">
+                                <option value="1">Phone Number</option>
+                                <option value="2">Social Link</option>
+                                <option value="3">Email Address</option>
+                              </select>
                         </div>
                     </div>
                 </div>

@@ -37,7 +37,17 @@ class HotlineController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //dd($request->all());
+        $request->validate([
+            'number' => 'required',
+            'name' => 'required'
+        ]);
+
+      $hotline =  Hotline::create($request->all());
+
+     // dd($hotline);
+
+        return redirect('hotline');
     }
 
     /**
@@ -80,8 +90,11 @@ class HotlineController extends Controller
      * @param  \App\Hotline  $hotline
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Hotline $hotline)
+    public function destroy(Request $data)
     {
-        //
+        Hotline::destroy($data->id);
+
+
+        return redirect('hotline');
     }
 }
