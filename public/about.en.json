@@ -1,0 +1,55 @@
+{
+   "about":{
+      "description":"The Sole purpose of this initiative is to create mass awareness about the novel coronavirus (2019-nCoV, widely known as Covid-19) outbreak in Bangladesh. The app is aslo designed to share information about the likely prevention of this recent pandemic. From social responsibility, this movile app is developed by BinaryBase.io.",
+      "is_sponsor":false,
+      "sponsors":[
+         {
+            "logo":"https://www.brosolved.com/covid19/public/img/logo.png",
+            "name":"Bangladesh Institute of Planners (BIP)",
+            "url":"https://www.bip.org.bd/"
+         }
+      ],
+      "is_innovation":true,
+      "innovators":[
+         {
+            "platform":"LinkedIn",
+            "name":"Jubayer Ahsan",
+            "designation":"Innovation Lead",
+            "url":"https://www.linkedin.com/in/jubayerahsan/"
+         },
+         {
+            "platform":"LinkedIn",
+            "name":"Noor Nabiul Alam Siddiqui",
+            "designation":"Innovation Dev Lead",
+            "url":"https://www.linkedin.com/in/sazalns/"
+         }
+      ],
+      "more_info":[
+         {
+            "platform":"website",
+            "name":"WHO Bangladesh",
+            "url":"https://www.who.int/bangladesh/"
+         },
+         {
+            "platform":"website",
+            "name":"IEDCR",
+            "url":"https://www.iedcr.gov.bd/"
+         },
+         {
+            "platform":"website",
+            "name":"Corona Info",
+            "url":"https://corona.gov.bd/"
+         },
+         {
+            "platform":"website",
+            "name":"WorldOMeters",
+            "url":"https://www.worldometers.info/"
+         }
+      ],
+      "ms_app_info":{
+         "name":"App Info",
+         "github":"https://github.com/sazal-ns",
+         "data_source":"Data Source WHO, IEDCR, Corona Info, WorldOMeters."
+      }
+   }
+}

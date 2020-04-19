@@ -1,0 +1,55 @@
+{
+   "about":{
+      "description":"এই মোবাইল অ্যাপসটি তৈরীর একমাত্র উদ্দেশ্য হল বাংলাদেশে করোনভাইরাস (2019-nCoV, যা ব্যাপকভাবে কোভিড ১৯ নামে পরিচিত) সম্পর্কে জনসচেতনতা তৈরি করা। অ্যাপ্লিকেশনটি সাম্প্রতিক মহামারীটির সম্ভাব্য প্রতিরোধ সম্পর্কে তথ্য মানুষের মাঝে শেয়ার বা প্রদানের লক্ষে উন্মুক্ত করা হয়েছে । সামাজিক দায়বদ্ধতা থেকে, এই মোবাইল অ্যাপসটি বাইনারিবেস তৈরী করেছে ।",
+      "is_sponsor":false,
+      "sponsors":[
+         {
+            "logo":"https://www.brosolved.com/covid19/public/img/logo.png",
+            "name":"বাংলাদেশ ইনস্টিটিউট অফ প্ল্যানারস (বিআইপি)",
+            "url":"https://www.bip.org.bd/"
+         }
+      ],
+      "is_innovation":true,
+      "innovators":[
+         {
+            "platform":"LinkedIn",
+            "name":"জুবায়ের আহসান",
+            "designation":"ইনোভেশন লিড",
+            "url":"https://www.linkedin.com/in/jubayerahsan/"
+         },
+         {
+            "platform":"LinkedIn",
+            "name":"নূর নবীউল আলম সিদ্দিকী",
+            "designation":"ইনোভেশন ডেভ লিড",
+            "url":"https://www.linkedin.com/in/sazalns/"
+         }
+      ],
+      "more_info":[
+         {
+            "platform":"website",
+            "name":"ডাব্লুএইচও বাংলাদেশ",
+            "url":"https://www.who.int/bangladesh/"
+         },
+         {
+            "platform":"website",
+            "name":"আইইডিসিআর",
+            "url":"https://www.iedcr.gov.bd/"
+         },
+         {
+            "platform":"website",
+            "name":"করোনা ইনফো",
+            "url":"https://corona.gov.bd/"
+         },
+         {
+            "platform":"website",
+            "name":"ওয়ার্ল্ডওমিটারস",
+            "url":"https://www.worldometers.info/"
+         }
+      ],
+      "ms_app_info":{
+         "name":"অ্যাপ্লিকেশন তথ্য",
+         "github":"https://github.com/sazal-ns",
+         "data_source":"ডেটা সোর্স ডাব্লুএইচও, আইইডিসিআর, করোনার তথ্য, ওয়ার্ল্ডওমিটারস।"
+      }
+   }
+}
