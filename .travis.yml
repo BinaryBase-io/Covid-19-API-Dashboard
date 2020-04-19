@@ -11,14 +11,13 @@ before_script:
   - php artisan key:generate
   - php artisan migrate
   - rm -rf ~/.nvm && git clone https://github.com/creationix/nvm.git ~/.nvm && (cd ~/.nvm && git checkout `git describe --abbrev=0 --tags`) && source ~/.nvm/nvm.sh && nvm install $TRAVIS_NODE_VERSION
-  - npm install --global gulp-cli
   - npm install
 
 before_install:
   - mysql -e 'CREATE DATABASE io_binarybase_covid_19;'
 
 script:
-  - phpdbg -qrr vendor/bin/phpunit --coverage-clover=coverage.xml
+  - vendor/bin/phpunit
 
 services:
   - mysql
