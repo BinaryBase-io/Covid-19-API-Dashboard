@@ -1,5 +1,5 @@
-<p align="center"><img src="https://binarybase.io/img/logo.png" width="400"></p>
-
+<p align="center"><img src="http://brosolved.com/share/github_covid_logo.png" width="400"></p>
+</br>
 <p align="center">
 <a href="https://travis-ci.org/github/BinaryBase-io/Covid-19-API-Dashboard"><img src="https://travis-ci.org/BinaryBase-io/Covid-19-API-Dashboard.svg?branch=master" alt="Build Status"></a>
 </p>
