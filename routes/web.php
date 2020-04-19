@@ -25,6 +25,11 @@ Route::post('/hotline/add', 'HotlineController@store')->name('hotline_add');
 Route::put('/hotline', 'HotlineController@update')->name('hotline_update');
 Route::delete('/hotline', 'HotlineController@destroy')->name('hotline_delete');
 
+Route::get('/gov-press', 'GovPressController@index')->name('gov-press');
+Route::get('/gov-press/create', 'GovPressController@create')->name('gov-press_create');
+Route::post('/gov-press/add', 'GovPressController@Store')->name('gov-press_add');
+Route::delete('/gov-press', 'GovPressController@destroy')->name('gov-press_delete');
+
 
 Route::get('app/about', function () {
     return response(file_get_contents(base_path('public\about.en.json')))->header('Content-Type', 'application/json');

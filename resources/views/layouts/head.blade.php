@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ URL::asset('css/fontawsome-free/all.min.css') }}">
     <link rel="stylesheet" href="{{ URL::asset('css/overlayScrollbars/OverlayScrollbars.min.css')}}">
     <link rel="stylesheet" href="{{ URL::asset('css/adminLTE/adminlte.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('css/main.css')}}">
 
     @yield('css')
 

@@ -41,6 +41,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="{{route('gov-press')}}" class="nav-link {{ request()->is('gov-press*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-file-powerpoint"></i>
+                        <p>
+                            Gov. Ins
+                        </p>
+                    </a>
+                </li>
+                </li>
+                <li class="nav-item">
                     <a href="{{route('about')}}" class="nav-link {{ request()->is('about*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-th"></i>
                         <p>

@@ -6,7 +6,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Hotline</h1>
+                <h1 class="m-0 text-dark">Official instructions and press releases</h1>
             </div><!-- /.col -->
         </div><!-- /.row -->
     </div><!-- /.container-fluid -->
@@ -20,11 +20,11 @@
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h3 class="card-title">All Hotlines</h3>
+                <h3 class="card-title">All Official Instructions &amp; Press Releases</h3>
 
                 <div class="card-tools">
                     <div class="input-group input-group-sm">
-                        <a href="{{ URL::route('hotline_create')}}"><button type="submit" class="btn btn-info"><i
+                        <a href="{{ URL::route('gov-press_create')}}"><button type="submit" class="btn btn-info"><i
                                     class="fas fa-plus"></i></button> </a>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                         <tr>
                             <th>#</th>
                             <th>Name</th>
-                            <th>Number/URL</th>
+                            <th>URL</th>
                             <th>Type</th>
                             <th>Action</th>
                         </tr>
@@ -45,7 +45,7 @@
                         @php
                             $i=1;
                         @endphp
-                        @foreach ($hotlines as $hotline)
+                        @foreach ($govs as $gov)
                         <tr>
                             <td>
                                 {{$i}}
@@ -53,19 +53,17 @@
                                     $i++;
                                 @endphp
                             </td>
-                            <td>{{$hotline->name}}</td>
-                            <td>{{$hotline->number}}</td>
+                            <td>{{$gov->name}}</td>
+                            <td><a href="{{$gov->url}}" target="_blank">External URL</a></td>
                             <td>
-                                @if ($hotline->type == 1)
-                                    Phone Number
-                                @elseif ($hotline->type == 2)
-                                    Social Link
-                                @elseif ($hotline->type == 3)
-                                    Email Address
+                                @if ($gov->type == 1)
+                                 Instructions
+                                @elseif ($gov->type == 2)
+                                    Press Releases
                                 @endif
                             </td>
                             <td>
-                                <button id="hotline_id" data-hotline_id="{{$hotline->id}}" type="button" class="btn btn-danger  pull-right fa fa-trash-alt" data-toggle="modal" data-target="#modal-delete"> Delete</button>
+                                <button id="hotline_id" data-hotline_id="{{$gov->id}}" type="button" class="btn btn-danger  pull-right fa fa-trash-alt" data-toggle="modal" data-target="#modal-delete"> Delete</button>
                             </td>
                         </tr>
                         @endforeach
@@ -83,12 +81,12 @@
     <div class="modal-dialog">
       <div class="modal-content bg-danger">
         <div class="modal-header">
-          <h4 class="modal-title">Delete Hotline</h4>
+          <h4 class="modal-title">Delete Data</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <form role="form" method="POST" action="{{route('hotline_delete')}}">
+        <form role="form" method="POST" action="{{route('gov-press_delete')}}">
           {{method_field('DELETE')}}
           {{ csrf_field() }}
           <div class="modal-body">
