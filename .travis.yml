@@ -29,3 +29,6 @@ cache:
 
 env:
   - TRAVIS_NODE_VERSION="4"
+
+notifications:
+  slack: squad-0:0qnrxNQyfItKkwdV9EXyhKzr

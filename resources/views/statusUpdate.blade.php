@@ -76,7 +76,11 @@
                                         value="{{$json->recovered->value}}" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <label>Global Data last update: {{\Carbon\Carbon::parse($json->lastUpdate)->diffForHumans()}}</label>
+                                    <label>
+                                        Global Data last update: {{\Carbon\Carbon::parse($json->lastUpdate)->diffForHumans()}}
+                                        <br>
+                                        {{($json->confirmed->value - $statusBD->world_total_infected) > 0 ? "UPDATE NOW" : ""}}
+                                    </label>
                                 </div>
                             </div>
                         </div>
