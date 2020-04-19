@@ -16,7 +16,7 @@ before_script:
   - gulp --production
 
 before_install:
-  - mysql -e 'CREATE DATABASE travis;'
+  - mysql -e 'CREATE DATABASE io_binarybase_covid_19;'
 
 script:
   - phpdbg -qrr vendor/bin/phpunit --coverage-clover=coverage.xml
