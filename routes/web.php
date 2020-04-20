@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
 Route::get('/', "CovidController@index")->name('home');
 
 Route::get('/status', 'StatusBDController@edit')->name('status');
@@ -34,3 +36,6 @@ Route::delete('/gov-press', 'GovPressController@destroy')->name('gov-press_delet
 Route::get('app/about', function () {
     return response(file_get_contents(base_path('public\about.en.json')))->header('Content-Type', 'application/json');
  })->name('about');
+
+
+Route::get('/home', 'HomeController@index');
