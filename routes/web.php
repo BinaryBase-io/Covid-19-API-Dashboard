@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::mixin(new \Laravel\Ui\AuthRouteMethods());
 Auth::routes();
 
 Route::get('/', "CovidController@index")->name('home');
