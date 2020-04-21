@@ -1,0 +1,5 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/brosolved/public_html/covid19  # Add /<app_folder> if required
+        - /bin/cp -r * $DEPLOYPATH
