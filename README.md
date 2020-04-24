@@ -6,6 +6,8 @@
 
 ## About Covid-19 API Dashboard
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b4cf65bcb54449dd8339536a855f1382)](https://app.codacy.com/gh/BinaryBase-io/Covid-19-API-Dashboard?utm_source=github.com&utm_medium=referral&utm_content=BinaryBase-io/Covid-19-API-Dashboard&utm_campaign=Badge_Grade_Dashboard)
+
 This dashboard is the backbone of Covid-19 (BD) Android Application
 
 ## License
