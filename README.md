@@ -10,4 +10,4 @@ This dashboard is the backbone of Covid-19 (BD) Android Application
 
 ## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
