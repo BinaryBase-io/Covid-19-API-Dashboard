@@ -10,4 +10,4 @@ This dashboard is the backbone of Covid-19 (BD) Android Application
 
 ## License
 
-This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Remember that this repo is licensed under [CC BY 3.0.](https://creativecommons.org/licenses/by/3.0/).
